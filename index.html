@@ -11,7 +11,7 @@
     />
   </head>
   <body>
-    <h1>Arena Animation</h1>
+    <h1>Course Finder</h1>
     <div id="search-section" class="search-container">
       <div class="search-box">
         <label for="duration">Search by Duration:</label>
@@ -35,7 +35,7 @@
     </div>
 
     <div class="results" id="result-text" style="display: none">
-      <h3>Results Found!</h3>
+      <h3>Results Found:</h3>
       <div id="course-grid" class="course-grid"></div>
     </div>
 
@@ -47,9 +47,17 @@
           <th>Course Name</th>
           <th>Duration</th>
           <th>Terms</th>
-          <th>Software</th>
         </tr>
         <tr id="course-detail-table1"></tr>
+      </table>
+
+      <table id="course-detail-table5" style="display: none">
+        <tr>
+          <th>Term1</th>
+          <th>Term2</th>
+          <th>Term3</th>
+        </tr>
+        <tr id="course-detail-table5-content"></tr>
       </table>
 
       <table>
@@ -68,9 +76,7 @@
           <th>Total Sum</th>
           <th>Monthly Installments</th>
         </tr>
-        <tr id="course-detail-table3">
-          <!-- Lump sum and installment yaha insert hoga-->
-        </tr>
+        <tr id="course-detail-table3"></tr>
       </table>
 
       <table>
@@ -79,16 +85,13 @@
           <th>Months</th>
           <th>Total Submission</th>
         </tr>
-        <tr id="course-detail-table4">
-          <!-- Installments details yaha insert hoga -->
-        </tr>
+        <tr id="course-detail-table4"></tr>
       </table>
 
-      <a href="#" class="back-button" onclick="goBack()"
-        ><i class="fas fa-arrow-left"></i>Back</a
-      >
+      <a href="#" class="back-button" onclick="goBack()">
+        <i class="fas fa-arrow-left"></i> Back
+      </a>
     </div>
-
     <script src="script.js"></script>
   </body>
 </html>
