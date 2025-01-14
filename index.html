@@ -17,9 +17,9 @@
         <label for="duration">Search by Duration:</label>
         <select id="duration" onchange="searchByFilter()">
           <option value="">Select Duration</option>
-          <option value="Short">Short Term</option>
-          <option value="Mid">Mid Term</option>
-          <option value="Long">Long Term</option>
+          <option value="Short">Short Term (Up to 12 months)</option>
+          <option value="Mid">Mid Term (Up to 18 months)</option>
+          <option value="Long">Long Term (More than 18 months)</option>
         </select>
       </div>
 
@@ -72,18 +72,18 @@
       <table>
         <tr>
           <th>Lump Sum</th>
-          <th>Quarterly Installments</th>
-          <th>Total Sum</th>
-          <th>Monthly Installments</th>
+          <th>Installments</th>
+          <th>Total Fees</th>
+          <th>Total Submission</th>
         </tr>
         <tr id="course-detail-table3"></tr>
       </table>
 
       <table>
         <tr>
-          <th>Installments</th>
-          <th>Months</th>
-          <th>Total Submission</th>
+          <th>Monthly Installments 1</th>
+          <th>Monthly Installments 2</th>
+          <th>Monthly Installments 3</th>
         </tr>
         <tr id="course-detail-table4"></tr>
       </table>
@@ -92,6 +92,7 @@
         <i class="fas fa-arrow-left"></i> Back
       </a>
     </div>
+
     <script src="script.js"></script>
   </body>
 </html>
