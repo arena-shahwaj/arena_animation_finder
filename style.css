@@ -183,7 +183,7 @@ td {
 .dropdown {
   border: 1px solid #ccc;
   border-radius: 5px;
-  max-height: 150px;
+  max-height: 115px;
   overflow-y: auto;
   position: absolute;
   width: 344px;
