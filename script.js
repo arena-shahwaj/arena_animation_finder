@@ -16,7 +16,7 @@ const courses = [
       downPayment: "35,000.00",
       lumpSum: "141,246.00",
       installments: "31,724.00",
-      months: 4,
+      month: 4,
       months :  15,
       totalSubmission: "126,896.00",
       monthlyInstallments_1: "10,575 x 11",
@@ -31,13 +31,13 @@ const courses = [
     duration: "11 months",
     interest: "Development",
     courseCode: "OV-655-3dMGDPr",
-    terms: "2", // This course has 2 terms
+    terms: "2", 
     totalFees: "163,312.00",
     registrationFees: "5,900.00",
     downPayment: "35,000.00",
     lumpSum: "142,308.00",
     installments: "42,770.67",
-    months: 3,
+    month: 3,
     months : 11,
     totalSubmission: "1,28,312.00",
     monthlyInstallments_1: "16,039 X 8",
@@ -51,13 +51,13 @@ const courses = [
     duration: " 14 months",
     interest: "Design",
     courseCode: "OV-3127-3DANOPS",
-    terms: "", // This course has no terms
+    terms: "", 
     totalFees: "",
     registrationFees: "",
     downPayment: "",
     lumpSum: "",
     installments: "",
-    months: 6,
+    month: 6,
     months : 14,
     totalSubmission: "",
     monthlyInstallments_1: "",
@@ -75,7 +75,7 @@ const courses = [
     downPayment: "",
     lumpSum: "",
     installments: "",
-    months: 6,
+    month: 6,
     months : 12,
     totalSubmission: "",
     monthlyInstallments_1: "",
@@ -87,13 +87,13 @@ const courses = [
     duration: " 13 months",
     interest: "Design",
     courseCode: "OV-3095-UIUXAP",
-    terms: "1", // This course has no terms
+    terms: "1",
     totalFees: "171,100.00",
     registrationFees: "5,900.00",
     downPayment: "30,000.00",
     lumpSum: "149,506.00",
     installments: "47,033.33",
-    months: 3,
+    month: 3,
     months : 13,
     totalSubmission: "141,100.00",
     monthlyInstallments_1: "14,110 x 10",
@@ -105,13 +105,13 @@ const courses = [
     duration: " 13 months",
     interest: "Design",
     courseCode: "OV-3160-VFXCE",
-    terms: "1", // This course has no terms
+    terms: "1", 
     totalFees: "149,506.00",
     registrationFees: "5,900.00",
     downPayment: "30,000.00",
     lumpSum: "133,930.00",
     installments: "39,835.33",
-    months: 3,
+    month: 3,
     months : 13,
     totalSubmission: "119,506.00",
     monthlyInstallments_1: "11,951 x 10",
@@ -123,13 +123,13 @@ const courses = [
     duration: " 10 months",
     interest: "Design",
     courseCode: "OV-3153 - CFM",
-    terms: "1", // This course has no terms
+    terms: "1", 
     totalFees: "94,754.00",
     registrationFees: "5,900.00",
     downPayment: "30,000.00",
     lumpSum: "91,096.00",
     installments: "32,377.00",
-    months: 2,
+    month: 2,
     months : 10,
     totalSubmission: "64,754.00",
     monthlyInstallments_1: "9,251 X 7",
@@ -141,13 +141,13 @@ const courses = [
     duration: " 10 months",
     interest: "Design",
     courseCode: "OV-646-MGD",
-    terms: "1", // This course has no terms
+    terms: "1", 
     totalFees: "128,620.00",
     registrationFees: "5,900.00",
     downPayment: "30,000.00",
     lumpSum: "112,454.00",
     installments: "49,310.00",
-    months: 2,
+    month: 2,
     months : 10,
     totalSubmission: "98,620.00",
     monthlyInstallments_1: "14,089 x 7",
@@ -159,13 +159,13 @@ const courses = [
     duration: " 10 months",
     interest: "Design",
     courseCode: "OV-3106-WDD",
-    terms: "1", // This course has no terms
+    terms: "1", 
     totalFees: "87,320.00",
     registrationFees: "5,900.00",
     downPayment: "30,000.00",
     lumpSum: "78,470.00",
     installments: "28,660.00",
-    months: 2,
+    month: 2,
     months : 10,
     totalSubmission: "57,320.00",
     monthlyInstallments_1: "8,189 X 7",
@@ -177,13 +177,13 @@ const courses = [
     duration: " 14 months",
     interest: "Design",
     courseCode: "OV-3167-ADGA",
-    terms: "1", // This course has no terms
+    terms: "1", 
     totalFees: "149,860.00",
     registrationFees: "5,900.00",
     downPayment: "30,000.00",
     lumpSum: "141,600.00",
     installments: "29,965.00",
-    months: 4,
+    month: 4,
     months:14,
     totalSubmission: "119,860.00",
     monthlyInstallments_1: "10,897X 11",
@@ -195,13 +195,13 @@ const courses = [
     duration: " 19 months",
     interest: "Design",
     courseCode: "OV-3165-DCC",
-    terms: "1", // This course has no terms
+    terms: "1", 
     totalFees: "207,326.00",
     registrationFees: "5,900.00",
     downPayment: "30,000.00",
     lumpSum: "191,632.00",
     installments: "35,465.20",
-    months:  "5",
+    month:  5,
     months : 19,
     totalSubmission: "177,326.00",
     monthlyInstallments_1: "11,083 X 16",
@@ -213,13 +213,13 @@ const courses = [
     duration: " 13 months",
     interest: "Design",
     courseCode: "OV-3165-DCC-MD",
-    terms: "1", // This course has no terms
+    terms: "1",
     totalFees: "144,432.00",
     registrationFees: "5,900.00",
     downPayment: "30,000.00",
     lumpSum: "137,116.00",
     installments: "38,144.00",
-    months: "3",
+    month: 3,
     months: 13,
     totalSubmission: "114,432.00",
     monthlyInstallments_1: "11,443 X 10",
@@ -231,13 +231,13 @@ const courses = [
     duration: " 13 months",
     interest: "Design",
     courseCode: "OV-3165-DCC-UID",
-    terms: "1", // This course has no terms
+    terms: "1", 
     totalFees: "154,698.00",
     registrationFees: "5,900.00",
     downPayment: "30,000.00",
     lumpSum: "146,084.00",
     installments: "41,566.00",
-    months: "3",
+    month: 3,
     months: 12,
     totalSubmission: "124,698.00",
     monthlyInstallments_1: "12,470 X 10",
@@ -249,13 +249,13 @@ const courses = [
     duration: "6 months",
     interest: "Design",
     courseCode: "OV-3165-DCC-UID",
-    terms: "1", // This course has no terms
+    terms: "1", 
     totalFees: "154,698.00",
     registrationFees: "5,900.00",
     downPayment: "30,000.00",
     lumpSum: "146,084.00",
     installments: "41,566.00",
-    months: "3",
+    month: 3,
     months: 6,
     totalSubmission: "124,698.00",
     monthlyInstallments_1: "12,470 X 10",
@@ -268,13 +268,13 @@ const courses = [
     duration: " 36 months",
     interest: "Design",
     courseCode: "OV-3165-DCC-UID",
-    terms: "1", // This course has no terms
+    terms: "1", 
     totalFees: "154,698.00",
     registrationFees: "5,900.00",
     downPayment: "30,000.00",
     lumpSum: "146,084.00",
     installments: "41,566.00",
-    months: "3",
+    month: 3,
     months: 36,
     totalSubmission: "124,698.00",
     monthlyInstallments_1: "12,470 X 10",
@@ -292,10 +292,9 @@ let selectedCourse = null;
 // Show all courses in the dropdown when input is focused
 function showAllCourses() {
   const dropdown = document.getElementById("dropdown");
-  dropdown.innerHTML = ""; // Clear previous content
-  dropdown.style.display = "block"; // Show the dropdown
+  dropdown.innerHTML = ""; 
+  dropdown.style.display = "block";
 
-  // Add each course to the dropdown
   courses.forEach((course) => {
     const courseOption = document.createElement("div");
     courseOption.textContent = course.name;
@@ -393,7 +392,7 @@ function showCourseDetail(courseName) {
   document.getElementById("course-detail-table3").innerHTML = `
     <td>${selectedCourse.lumpSum}</td>
     <td>${selectedCourse.installments}</td>
-    <td>${selectedCourse.totalFees}</td>
+    <td>${selectedCourse.month}</td>
     <td>${selectedCourse.totalSubmission}</td>
   `;
 
