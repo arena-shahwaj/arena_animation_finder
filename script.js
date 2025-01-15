@@ -1,5 +1,7 @@
 
 
+//
+
 let selectedCourse = null;
 
 const courseCategories = {
@@ -43,6 +45,7 @@ let filteredCourses = [];
 
 // Function to show courses based on the selected duration
 function showCategoriesByDuration() {
+  document.getElementById('interest').value = '';
   const selectedDuration = document.getElementById("duration").value;
   const dropdown = document.getElementById("dropdown");
   dropdown.innerHTML = ""; // Clear previous options
