@@ -83,20 +83,20 @@ h1 {
 
 .results {
   display: none;
-  margin-top: 20px;
+  margin-top: 5px;
 }
 
 .course-grid {
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
-  justify-content: flex-start;
+  justify-content: center;
 }
 
 .course-card {
   width: 100px; 
-  height: 100px;
-  padding: 20px;
+  
+  padding: 5px;
   background-color: #e9ecef;
   border-radius: 8px;
   text-align: center;
@@ -178,7 +178,25 @@ th {
 td {
   background-color: #d5d5e3;
 }
+.dropdown {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  max-height: 150px;
+  overflow-y: auto;
+  position: absolute;
+  width: 368px;
+  background-color: #fff;
+  z-index: 10;
+}
 
+.dropdown div {
+  padding: 10px;
+  cursor: pointer;
+}
+
+.dropdown div:hover {
+  background-color: #5a58f0;
+}
       
 /* Styles for screens 768px and above */
 @media (min-width: 768px) {

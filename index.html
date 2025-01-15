@@ -13,32 +13,38 @@
   <body>
     <h1>Course Finder</h1>
     <div id="search-section" class="search-container">
+      <!-- Search by Duration -->
       <div class="search-box">
         <label for="duration">Search by Duration:</label>
         <select id="duration" onchange="searchByFilter()">
           <option value="">Select Duration</option>
-          <option value="Short">Short Term (Up to 12 months)</option>
-          <option value="Mid">Mid Term (Up to 18 months)</option>
-          <option value="Long">Long Term (More than 18 months)</option>
+          <option value="Short">Short Term (Less than 10 months)</option>
+          <option value="Mid">Mid Term (10 to 19 months)</option>
+          <option value="Long">Long Term (More than 19 months)</option>
         </select>
       </div>
 
+      <!-- Search by Interest -->
       <div class="search-box">
         <label for="interest">Search by Interest:</label>
         <input
           type="text"
           id="interest"
-          placeholder="Enter Course Name"
-          oninput="searchByInterest()"
+          placeholder="Select Course"
+          onfocus="showAllCourses()"
+          readonly
         />
+        <div id="dropdown" class="dropdown" style="display: none"></div>
       </div>
     </div>
 
+    <!-- Results Section -->
     <div class="results" id="result-text" style="display: none">
       <h3>Results Found:</h3>
       <div id="course-grid" class="course-grid"></div>
     </div>
 
+    <!-- Course Details Section -->
     <div id="course-detail-section" class="course-detail" style="display: none">
       <h3 id="course-detail-title"></h3>
       <table>

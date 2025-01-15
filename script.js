@@ -17,6 +17,7 @@ const courses = [
       lumpSum: "141,246.00",
       installments: "31,724.00",
       months: 4,
+      months :  15,
       totalSubmission: "126,896.00",
       monthlyInstallments_1: "10,575 x 11",
       monthlyInstallments_2: "9,761 x 12",
@@ -37,6 +38,7 @@ const courses = [
     lumpSum: "142,308.00",
     installments: "42,770.67",
     months: 3,
+    months : 11,
     totalSubmission: "1,28,312.00",
     monthlyInstallments_1: "16,039 X 8",
     monthlyInstallments_2: "14,257 X 9",
@@ -56,6 +58,7 @@ const courses = [
     lumpSum: "",
     installments: "",
     months: 6,
+    months : 14,
     totalSubmission: "",
     monthlyInstallments_1: "",
     monthlyInstallments_2: "",
@@ -73,6 +76,7 @@ const courses = [
     lumpSum: "",
     installments: "",
     months: 6,
+    months : 12,
     totalSubmission: "",
     monthlyInstallments_1: "",
     monthlyInstallments_2: "",
@@ -90,6 +94,7 @@ const courses = [
     lumpSum: "149,506.00",
     installments: "47,033.33",
     months: 3,
+    months : 13,
     totalSubmission: "141,100.00",
     monthlyInstallments_1: "14,110 x 10",
     monthlyInstallments_2: "12,828 x 11",
@@ -107,6 +112,7 @@ const courses = [
     lumpSum: "133,930.00",
     installments: "39,835.33",
     months: 3,
+    months : 13,
     totalSubmission: "119,506.00",
     monthlyInstallments_1: "11,951 x 10",
     monthlyInstallments_2: "10,864 x 11",
@@ -124,6 +130,7 @@ const courses = [
     lumpSum: "91,096.00",
     installments: "32,377.00",
     months: 2,
+    months : 10,
     totalSubmission: "64,754.00",
     monthlyInstallments_1: "9,251 X 7",
     monthlyInstallments_2: "8,094 X 8",
@@ -141,6 +148,7 @@ const courses = [
     lumpSum: "112,454.00",
     installments: "49,310.00",
     months: 2,
+    months : 10,
     totalSubmission: "98,620.00",
     monthlyInstallments_1: "14,089 x 7",
     monthlyInstallments_2: "12,328 x 8",
@@ -158,6 +166,7 @@ const courses = [
     lumpSum: "78,470.00",
     installments: "28,660.00",
     months: 2,
+    months : 10,
     totalSubmission: "57,320.00",
     monthlyInstallments_1: "8,189 X 7",
     monthlyInstallments_2: "7,165 X 8",
@@ -175,6 +184,7 @@ const courses = [
     lumpSum: "141,600.00",
     installments: "29,965.00",
     months: 4,
+    months:14,
     totalSubmission: "119,860.00",
     monthlyInstallments_1: "10,897X 11",
     monthlyInstallments_2: "9,989 X 12",
@@ -191,7 +201,8 @@ const courses = [
     downPayment: "30,000.00",
     lumpSum: "191,632.00",
     installments: "35,465.20",
-    months: 5,
+    months:  "5",
+    months : 19,
     totalSubmission: "177,326.00",
     monthlyInstallments_1: "11,083 X 16",
     monthlyInstallments_2: "10,431 X 17",
@@ -208,7 +219,8 @@ const courses = [
     downPayment: "30,000.00",
     lumpSum: "137,116.00",
     installments: "38,144.00",
-    months: 3,
+    months: "3",
+    months: 13,
     totalSubmission: "114,432.00",
     monthlyInstallments_1: "11,443 X 10",
     monthlyInstallments_2: "10,403 X 11",
@@ -225,7 +237,45 @@ const courses = [
     downPayment: "30,000.00",
     lumpSum: "146,084.00",
     installments: "41,566.00",
-    months: 3,
+    months: "3",
+    months: 12,
+    totalSubmission: "124,698.00",
+    monthlyInstallments_1: "12,470 X 10",
+    monthlyInstallments_2: "11,330 X 11",
+    monthlyInstallments_3: "10, 352X 12"
+  },
+  {
+    name: "Graphic Design",
+    duration: "6 months",
+    interest: "Design",
+    courseCode: "OV-3165-DCC-UID",
+    terms: "1", // This course has no terms
+    totalFees: "154,698.00",
+    registrationFees: "5,900.00",
+    downPayment: "30,000.00",
+    lumpSum: "146,084.00",
+    installments: "41,566.00",
+    months: "3",
+    months: 6,
+    totalSubmission: "124,698.00",
+    monthlyInstallments_1: "12,470 X 10",
+    monthlyInstallments_2: "11,330 X 11",
+    monthlyInstallments_3: "10, 352X 12"
+  },
+
+  {
+    name: " Degree ",
+    duration: " 36 months",
+    interest: "Design",
+    courseCode: "OV-3165-DCC-UID",
+    terms: "1", // This course has no terms
+    totalFees: "154,698.00",
+    registrationFees: "5,900.00",
+    downPayment: "30,000.00",
+    lumpSum: "146,084.00",
+    installments: "41,566.00",
+    months: "3",
+    months: 36,
     totalSubmission: "124,698.00",
     monthlyInstallments_1: "12,470 X 10",
     monthlyInstallments_2: "11,330 X 11",
@@ -239,28 +289,39 @@ const courses = [
 
 let selectedCourse = null;
 
-function searchByInterest() {
-  document.getElementById("course-grid").innerHTML = "";
-  document.getElementById("result-text").style.display = "none";
+// Show all courses in the dropdown when input is focused
+function showAllCourses() {
+  const dropdown = document.getElementById("dropdown");
+  dropdown.innerHTML = ""; // Clear previous content
+  dropdown.style.display = "block"; // Show the dropdown
 
-  document.getElementById("duration").value = "";
-
-  const interestInput = document.getElementById("interest").value.toLowerCase();
-  if (interestInput.length === 0) {
-    return;
-  }
-
-  const filteredCourses = courses.filter((course) =>
-    course.name.toLowerCase().includes(interestInput)
-  );
-  displayCourses(filteredCourses);
-
-  const resultText = document.getElementById("result-text");
-  resultText.style.display = filteredCourses.length > 0 ? "block" : "none";
+  // Add each course to the dropdown
+  courses.forEach((course) => {
+    const courseOption = document.createElement("div");
+    courseOption.textContent = course.name;
+    courseOption.onclick = () => selectCourse(course.name);
+    dropdown.appendChild(courseOption);
+  });
 }
 
+function selectCourse(courseName) {
+  // Set the selected course in the input field
+  document.getElementById("interest").value = courseName;
+  document.getElementById("dropdown").style.display = "none";
+
+  // Show course details
+  showCourseDetail(courseName);
+}
+
+// Hide the dropdown when clicking outside
+document.addEventListener("click", (e) => {
+  if (!e.target.closest(".search-box")) {
+    document.getElementById("dropdown").style.display = "none";
+  }
+});
+
 function searchByFilter() {
-  document.getElementById("interest").value = '';
+  document.getElementById("interest").value = "";
   document.getElementById("course-grid").innerHTML = "";
   document.getElementById("result-text").style.display = "none";
 
@@ -268,11 +329,11 @@ function searchByFilter() {
   let filteredCourses = [];
 
   if (selectedDuration === "Short") {
-    filteredCourses = courses.filter((course) => course.months <= 12);
+    filteredCourses = courses.filter((course) => course.months < 10);
   } else if (selectedDuration === "Mid") {
-    filteredCourses = courses.filter((course) => course.months <= 18);
+    filteredCourses = courses.filter((course) => course.months >= 10 && course.months <= 19);
   } else if (selectedDuration === "Long") {
-    filteredCourses = courses.filter((course) => course.months > 18);
+    filteredCourses = courses.filter((course) => course.months > 19);
   }
 
   displayCourses(filteredCourses);
@@ -313,8 +374,8 @@ function showCourseDetail(courseName) {
   if (selectedCourse.terms > 0) {
     document.getElementById("course-detail-table5").style.display = "block";
     document.getElementById("course-detail-table5-content").innerHTML = `
-      <td>${selectedCourse.term1}</td>
-      <td>${selectedCourse.term2}</td>
+      <td>${selectedCourse.term1 || "N/A"}</td>
+      <td>${selectedCourse.term2 || "N/A"}</td>
       <td>${selectedCourse.term3 || "N/A"}</td>
     `;
   } else {
