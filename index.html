@@ -16,7 +16,7 @@
       <!-- Search by Duration -->
       <div class="search-box">
         <label for="duration">Search by Duration:</label>
-        <select id="duration" onchange="searchByFilter()">
+        <select id="duration" onchange="showCategoriesByDuration()">
           <option value="">Select Duration</option>
           <option value="Short">Short Term (Less than 10 months)</option>
           <option value="Mid">Mid Term (10 to 19 months)</option>
@@ -30,22 +30,22 @@
         <input
           type="text"
           id="interest"
-          placeholder="Select Course"
-          onfocus="showAllCourses()"
+          placeholder="Select Category"
+          onfocus="showCategoriesByDuration()"
           readonly
         />
-        <div id="dropdown" class="dropdown" style="display: none"></div>
+        <div id="dropdown" class="dropdown" style="display: none;"></div>
       </div>
     </div>
 
     <!-- Results Section -->
-    <div class="results" id="result-text" style="display: none">
+    <div class="results" id="result-text" style="display: none;">
       <h3>Results Found:</h3>
       <div id="course-grid" class="course-grid"></div>
     </div>
 
     <!-- Course Details Section -->
-    <div id="course-detail-section" class="course-detail" style="display: none">
+    <div id="course-detail-section" class="course-detail" style="display: none;">
       <h3 id="course-detail-title"></h3>
       <table>
         <tr>
@@ -57,7 +57,7 @@
         <tr id="course-detail-table1"></tr>
       </table>
 
-      <table id="course-detail-table5" style="display: none">
+      <table id="course-detail-table5" style="display: none;">
         <tr>
           <th>Term1</th>
           <th>Term2</th>
@@ -79,7 +79,7 @@
         <tr>
           <th>Lump Sum</th>
           <th>Installments</th>
-          <th>Months</th>
+          <th>Month</th>
           <th>Total Submission</th>
         </tr>
         <tr id="course-detail-table3"></tr>
